@@ -13,7 +13,7 @@ function Kieran.AddText(ply, ...)
             net.WriteColor(v)
         end
     end
-    if ply then
+    if IsValid(ply) then
         net.Send(ply)
     else
         net.Broadcast()
