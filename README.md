@@ -13,6 +13,6 @@
 ## 💨 Why is this better than other solutions?
 - The only other way to utilise chat.AddText on the server is by using [net.WriteTable](https://wiki.facepunch.com/gmod/net.WriteTable)
 - Sending invidual data types instead of a data structure that will need to be convert to JSON, is much faster and frees up server resources
-- In a net message, the server sends the number of arguments as an unsigned iteger, so the client knows how many net strings and net colours have been sent
+- In a net message, the server sends the number of arguments as an unsigned integer, so the client knows how many net strings and net colours have been sent
 - The client can then read the net message elements via a loop, using the amount of arguments as a range, storing them in a table
 - This table is unpacked and used as parameters for the client.AddText function 
